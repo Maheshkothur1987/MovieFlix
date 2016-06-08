@@ -1,0 +1,124 @@
+@font-face {
+    font-family: FranchiseRegular;
+    src: url('../fonts/Franchise-Bold.ttf');
+}
+
+body{
+    background-image: url('../images/background.jpeg');
+}
+
+.home{
+    text-decoration: none;
+    color: red;
+}
+
+.header{
+    float: left;
+}
+
+.logo{
+    font-size: 380%;
+    font-family: FranchiseRegular, sans-serif;
+}
+
+.login{
+    float:right;
+    padding-top: 1% ;
+    padding-right: 1%;
+}
+
+.btn-login{
+    border: none;
+    border-radius: 5%;
+    font-size: 20px;
+    color: white;
+    font-family: FranchiseRegular, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.tv-button{
+    padding-left: 2%;
+}
+
+.main-text-wrapper{
+    top:20%;
+    left: 11%;
+    position: absolute;
+    padding: 20px 20px;
+    font-family: FranchiseRegular, sans-serif;
+    color: white;
+}
+
+.main-text-wrapper p{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.btn-create-account{
+    background-color: red;
+    border: none;
+    color: white;
+    margin-bottom: 5%;
+    padding: 10px;
+    font-family: FranchiseRegular, sans-serif;
+    text-transform: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-wrapper{
+    font-size: 120%;
+}
+
+.input-wrapper{
+    display: block;
+    margin:2% 0 2% 0;
+    padding: 2%;
+    width: 75%;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.search_form{
+    display: inline;
+    float: right;
+    padding-top: 7px;
+    padding-right: 10px;
+}
+
+.bar_search{
+    height: 19px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: white;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.btn_search{
+    color: white;
+    background-color: red;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+
