@@ -1,0 +1,34 @@
+<div container>
+    <div class="row">
+        <div class="addtitle-header">
+            <h3>Add a new movie</h3>
+        </div>
+        <div class="col-xs-12 col-sm-4 form-wrapper">
+            <div class="input-group addtitle-input"><span class="input-group-addon">Title</span> <input class="form-control" type="text"  ng-model="newListing.Title"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Year</span> <input class="form-control" type="number"  ng-model="newListing.Year"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Rated</span> <input class="form-control" type="text"  ng-model="newListing.Rated"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Release date & year</span> <input class="form-control" type="text"  ng-model="newListing.Released"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Runtime</span> <input class="form-control" type="text"  ng-model="newListing.Runtime"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Genre</span> <input class="form-control" type="text"  ng-model="newListing.Genre"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Director</span> <input class="form-control" type="text"  ng-model="newListing.Director"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Writer</span>  <input class="form-control" type="text"  ng-model="newListing.Writer"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Actors</span> <input class="form-control" type="text"  ng-model="newListing.Actors"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Plot</span> <input class="form-control" type="text"  ng-model="newListing.Plot"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Language</span> <input class="form-control" type="text"  ng-model="newListing.Language"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Country</span> <input class="form-control" type="text"  ng-model="newListing.Country"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Awards</span> <input class="form-control" type="text"  ng-model="newListing.Awards"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Poster</span><input class="form-control" type="url"  ng-model="newListing.Poster"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Metascore</span> <input class="form-control" type="text"  ng-model="newListing.Metascore"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">imdbRating</span> <input class="form-control" type="text"  ng-model="newListing.imdbRating"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">imdbVotes</span> <input class="form-control" type="text"  ng-model="newListing.imdbVotes"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">imdbID</span> <input class="form-control" type="text"  ng-model="newListing.imdbID"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Type</span> <input class="form-control" type="text" ng-model="newListing.Type"></div>
+            <div class="addtitle-button">
+                <button type="submit" class="btn btn-success" ng-click="save(newListing)">Save</button>
+                <button type="submit" class="btn btn-danger" ng-click="cancel()">Cancel</button>
+
+            </div>
+        </div>
+
+    </div>
+</div>

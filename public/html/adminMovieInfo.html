@@ -1,0 +1,34 @@
+<div container>
+    <div class="row">
+        <div class="addtitle-header">
+            <h3>Add a movie here</h3>
+        </div>
+        <div class="col-xs-12 col-sm-4 form-wrapper">
+            <div class="input-group addtitle-input"><span class="input-group-addon">Title</span> <input class="form-control" type="text"  ng-model="item.Title"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Year</span> <input class="form-control" type="text"  ng-model="item.Year"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Rated</span> <input class="form-control" type="text"  ng-model="item.Rated"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Release date & year</span> <input class="form-control" type="text"  ng-model="item.Released"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Runtime</span> <input class="form-control" type="text"  ng-model="item.Runtime"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Genre</span> <input class="form-control" type="text"  ng-model="item.Genre"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Director</span> <input class="form-control" type="text"  ng-model="item.Director"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Writer</span>  <input class="form-control" type="text"  ng-model="item.Writer"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Actors</span> <input class="form-control" type="text"  ng-model="item.Actors"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Plot</span> <input class="form-control" type="text"  ng-model="item.Plot"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Language</span> <input class="form-control" type="text"  ng-model="item.Language"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Country</span> <input class="form-control" type="text"  ng-model="item.Country"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Awards</span> <input class="form-control" type="text"  ng-model="item.Awards"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Poster</span><input class="form-control" type="url"  ng-model="item.Poster"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Metascore</span> <input class="form-control" type="text"  ng-model="item.Metascore"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">imdbRating</span> <input class="form-control" type="text"  ng-model="item.imdbRating"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">imdbVotes</span> <input class="form-control" type="text"  ng-model="item.imdbVotes"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">imdbID</span> <input class="form-control" type="text"  ng-model="item.imdbID"></div>
+            <div class="input-group addtitle-input"><span class="input-group-addon">Type</span> <input class="form-control" type="text" ng-model="item.Type"></div>
+            <div class="addtitle-button">
+                <button type="submit" class="btn btn-success" ng-click="saveEdit()">Save</button>
+                <button type="submit" class="btn btn-danger" ng-click="delete(item)">Delete</button>
+
+            </div>
+        </div>
+
+    </div>
+</div>

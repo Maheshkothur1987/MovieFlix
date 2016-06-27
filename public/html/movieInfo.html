@@ -1,0 +1,141 @@
+<body ng-controller="browseController">
+  <div class="movieinfo-wrap">
+
+    <div class="title-details pull-left">
+      <div>
+        <h3>{{item.Title}}</h3>
+      </div>
+      <div class="movieinfo-poster">
+        <a class="">
+          <img src="{{item.Poster}}" alt="{{item.Title}}">
+        </a>
+      </div>
+
+      <div class="movieinfo-details pull-left">
+        <table class="table table-striped">
+
+          <tr>
+            <td>
+              User Rating/ Rate:
+            </td>
+            <td>
+              <input-stars max="5" icon-base="fa fa-star" icon-empty="fa-star-o" icon-hover="hover" icon-full="fa-star" ng-model="YourCtrl.property"></input-stars>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Year:
+            </td>
+            <td>
+              {{item.Year}}
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Rated:
+            </td>
+            <td>
+              {{item.Rated}}
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Released:
+            </td>
+            <td>
+              {{item.Released}}
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Runtime:
+            </td>
+            <td>
+              {{item.Runtime}}
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Genre:
+            </td>
+            <td>
+              {{item.Genre}}
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Director:
+            </td>
+            <td>
+              {{item.Director}}
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Writer:
+            </td>
+            <td>
+              {{item.Writer}}
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Actors:
+            </td>
+            <td>
+              {{item.Actors}}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="movieinfo-comments">
+      <div class="titleBox">
+        <label>Comments</label>
+      </div>
+
+      <div class="actionBox">
+        <ul class="commentList">
+          <li>
+            <div class="commenterImage">
+              <img src="http://lorempixel.com/50/50/people/6" />
+            </div>
+            <div class="commentText">
+              <p class="">Hello this is a test comment.</p> <span class="date sub-text">on June 13th, 2016</span>
+
+            </div>
+          </li>
+          <li>
+            <div class="commenterImage">
+              <img src="http://lorempixel.com/50/50/people/9" />
+            </div>
+            <div class="commentText">
+              <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Your comments" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-default">Add</button>
+          </div>
+        </form>
+        <div class="btn-movieinfo">
+          <button type="button" class="btn btn-success" ng-click="cancel()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>

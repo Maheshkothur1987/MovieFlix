@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row browse-thumbnails">
+        <div class="col-sm-3 col-xs-12 img-title" ng-repeat="item in movielist | filter: searchText | orderBy: sortColumn |filter:{Type:'series'} | startFrom:(currentPage-1)*maxSize | limitTo:maxSize">
+            <a ng-click="movieInfo(item)", class="thumbnail" ng-mouseover="showInfo='true'" ng-mouseleave="showInfo = 'false'">
+                <img ng-src="{{item.Poster}}" alt="{{item.Title}}">
+
+                <div class="browse-info" ng-show="showInfo == 'true'">
+                  <span class="cam">
+                    <i class="fa fa-video-camera"></i>
+                    <span class="value">{{item.Year}}</span>
+                  </span>
+
+                  <span class="star">
+                    <i class="fa fa-star"></i>
+                    <span class="value">{{item.imdbRating}}</span>
+                  </span>
+
+                  <div class="desc">
+                    <div class="title">
+                    {{ item.Title }}
+                    </div>
+                    <p class="content">{{item.Plot}}</p>
+                  </div>
+                  <div class="desc">
+                        <div class="content">
+                            <div>
+                                Director: {{ item.Director}}
+                            </div>
+                            <div>
+                                Actors: {{ item.Actors }}
+                            </div>
+                        </div>
+                  </div>
+                </div>
+            </a>
+            <h4 class="caption"><a ng-href="http://www.imdb.com/title/{{item.imdbID}}" target="_blank">{{ item.Title }}</a></h4>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 browse-pagination">
+        <uib-pagination boundary-links="true" total-items="(movielist | filter: searchText | filter:{Type:'series'}).length " ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></uib-pagination>
+
+      </div>
+      </div>
+</div>
