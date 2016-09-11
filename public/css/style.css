@@ -2,7 +2,7 @@
 .logo{
     height: 57px;
     top: -15px;
-    position: relative;
+    position: static;
 }
 
 .search-icon{
@@ -14,7 +14,7 @@
 }
 
 #header .navbar-link{
-    color: #3884AA;
+    color: green;
 }
 
 .login-btn{
@@ -80,7 +80,7 @@
     font-size: 30px;
     background-color: white;
     padding: 0 10px;
-   color: blue;
+   color: cyan;
 }
 
 .login-heading{
